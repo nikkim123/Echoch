@@ -15,3 +15,16 @@ System.out.print(" Enter the Port Address : " );
 Port=Integer.parseInt(Buf.readLine());
 Socket sok=new Socket("localhost",Port);
 
+if(sok.isConnected()==true)
+            System.out.println(" Server Socket is Connected Succecfully. ");
+InputStream in=sok.getInputStream();
+OutputStream ou=sok.getOutputStream();
+PrintWriter pr=new PrintWriter(ou);
+BufferedReader buf1=new BufferedReader(new
+InputStreamReader(System.in));
+BufferedReader buf2=new BufferedReader(new
+InputStreamReader(in));
+String str1,str2;
+            while(true){
+System.out.print(" Enter the Message : ");
+    
