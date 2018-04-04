@@ -20,83 +20,11 @@ if(so.isConnected()==true)
 InputStream in=so.getInputStream();
 OutputStream ou=so.getOutputStream();
 PrintWriter pr=new PrintWriter(ou);
-BufferedReader buf=new BufferedReader(new
-InputStreamReader(in));
+BufferedReader buf=new BufferedReader(new InputStreamReader(in));
 String str=buf.readLine();
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-:wq
-
-
-:w
-:wq
-:wq
-:wq
-A
-A
-A
-A
-A
-A
-A
-
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
+while(str != null ) {
+System.out.println(" Message Received From Client : " + str);
+System.out.println(" This Message is Forwarded To Client. ");
+pr.println(str);
+pr.flush();
 
