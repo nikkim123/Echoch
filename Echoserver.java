@@ -27,4 +27,12 @@ System.out.println(" Message Received From Client : " + str);
 System.out.println(" This Message is Forwarded To Client. ");
 pr.println(str);
 pr.flush();
+}
+}
+ catch(Exception e)
+  {
+  System.out.println(" Error : " + e.getMessage());
+  }
+}
+}
 
