@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class Echoserver
+public class EchoServer
 {
 public static void main(String args[]) throws Exception
 {
@@ -15,4 +15,5 @@ Port=Integer.parseInt(Buf.readLine());
 ServerSocket sok =new ServerSocket(Port);
 System.out.println(" Server is Ready To Receive a Message. ");
 System.out.println(" Waiting ..... ");
+
 Socket so=sok.accept();
