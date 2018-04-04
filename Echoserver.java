@@ -25,6 +25,7 @@ String str=buf.readLine();
 while(str != null ) {
 System.out.println(" Message Received From Client : " + str);
 System.out.println(" This Message is Forwarded To Client. ");
+System.out.println("");
 pr.println(str);
 pr.flush();
 }
@@ -35,4 +36,7 @@ pr.flush();
   }
 }
 }
+
+
+
 
