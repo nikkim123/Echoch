@@ -1,4 +1,4 @@
-javaimport java.io.*;
+import java.io.*;
 import java.net.*;
 public class Echoserver
 {
