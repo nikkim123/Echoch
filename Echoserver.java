@@ -25,12 +25,6 @@ InputStreamReader(in));
 String str=buf.readLine();
  
 
-:wq
-
-
-
-:q
-
 
 
 
