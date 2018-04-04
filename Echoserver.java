@@ -1,10 +1,7 @@
-
-
-
 import java.io.*;
 import java.net.*;
 
-public class Echoserver
+public class EchoServer
 {
 public static void main(String args[]) throws Exception
 {
@@ -19,3 +16,11 @@ ServerSocket sok =new ServerSocket(Port);
 System.out.println(" Server is Ready To Receive a Message. ");
 System.out.println(" Waiting ..... ");
 Socket so=sok.accept();
+if(so.isConnected()==true)
+            System.out.println(" Client Socket is Connected Succecfully. ");
+InputStream in=so.getInputStream();
+OutputStream ou=so.getOutputStream();
+PrintWriter pr=new PrintWriter(ou);
+BufferedReader buf=new BufferedReader(new
+InputStreamReader(in));
+String str=buf.readLine();
