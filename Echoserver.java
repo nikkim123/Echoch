@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class EchoServer
+public class Echoserver
 {
 public static void main(String args[]) throws Exception
 {
