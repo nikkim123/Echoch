@@ -27,4 +27,18 @@ InputStreamReader(in));
 String str1,str2;
             while(true){
 System.out.print(" Enter the Message : ");
-    
+       
+str1=buf1.readLine();
+pr.println(str1);
+pr.flush();
+System.out.println(" Message Send Successfully. ");
+str2=buf2.readLine();
+System.out.println(" Message From Server : " + str2);
+            }
+     }
+  catch(Exception e)
+  {
+   System.out.println(" Error : " + e.getMessage());
+  }
+
+}
