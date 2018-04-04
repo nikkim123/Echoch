@@ -1,6 +1,5 @@
 import java.io.*;
 import java.net.*;
-
 public class EchoServer
 {
 public static void main(String args[]) throws Exception
@@ -21,6 +20,19 @@ if(so.isConnected()==true)
 InputStream in=so.getInputStream();
 OutputStream ou=so.getOutputStream();
 PrintWriter pr=new PrintWriter(ou);
-BufferedReader buf=new BufferedReader(new
-InputStreamReader(in));
+BufferedReader buf=new BufferedReader(new InputStreamReader(in));
 String str=buf.readLine();
+while(str != null ) {
+System.out.println(" Message Received From Client : " + str);
+System.out.println(" This Message is Forwarded To Client. ");
+pr.println(str);
+pr.flush();
+}
+}
+ catch(Exception e)
+  {
+  System.out.println(" Error : " + e.getMessage());
+  }
+}
+}
+
